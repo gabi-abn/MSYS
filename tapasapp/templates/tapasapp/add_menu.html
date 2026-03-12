@@ -10,17 +10,21 @@
     <form>
         <div class = "mb-3">
             <label for = "dish_name" class = "form-label"> Name </label>
-            <input type = "text" class = "form-control" id = "dish_name" name = "dish_name">
+            <input type = "text" class = "form-control" id = "dish_name" name = "dish_name" style="margin-right: 10px";>
         </div>
 
-        <div class = "mb-3">
-            <label for = "cook_time" class = "form-label"> Cook Time </label>
-            <input type = "text" class = "form-control" id = "cook_time" name = "cook_time">
+        <div class = "row">
+            <div class = "col">
+                <label for = "prep_time" class = "form-label"> Prep Time </label>
+                <input type = "text" class = "form-control" id = "prep_time" name = "prep_time"> 
+            </div>
+            <div class = "col">
+                <label for = "cook_time" class = "form-label"> Cook Time </label>
+                <input type = "text" class = "form-control" id = "cook_time" name = "cook_time">          
+            </div>
         </div>
-
-        <div class = "mb-3">
-            <label for = "prep_time" class = "form-label"> Prep Time </label>
-            <input type = "text" class = "form-control" id = "prep_time" name = "prep_time">
+        <div>
+            <button class="btn btn-secondary t-3" style="margin-top: 30px;">Add to Dishess</button>
         </div>
     </form>
 {% endblock %}

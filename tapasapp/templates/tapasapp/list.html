@@ -10,11 +10,12 @@
                 {% block content %}
                 <div class="col-12">
                     <table class="table table-striped">
-                        <thead >
+                        <thead>
                             <tr>
-                                <th class="table-dark" scope="col"> Name </th>
-                                <th class="table-dark" scope="col"> Cooking Time </th>
-                                <th class="table-dark" scope="col"> Prep Time </th>    
+                                <th scope="col"> Name </th>
+                                <th scope="col"> Cooking Time </th>
+                                <th scope="col"> Prep Time </th>
+                                <th scope="col"> Details </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -23,6 +24,9 @@
                                 <td> {{ d.name }} </td>
                                 <td> {{ d.prep_time }} </td>
                                 <td> {{ d.cook_time }} </td>
+                                <td>
+                                    <button style="display:inline-block; background-color:gray; color:white; padding:5px 10px;">Details</button>
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>

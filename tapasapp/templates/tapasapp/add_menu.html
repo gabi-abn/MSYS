@@ -1,0 +1,26 @@
+{% extends 'tapasapp/base.html' %}
+{% load static %}
+
+{% block sidenav %}
+<li><a href="/">Back to main</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1> Add a dish! </h1>
+    <form>
+        <div class = "mb-3">
+            <label for = "dish_name" class = "form-label"> Name </label>
+            <input type = "text" class = "form-control" id = "dish_name" name = "dish_name">
+        </div>
+
+        <div class = "mb-3">
+            <label for = "cook_time" class = "form-label"> Cook Time </label>
+            <input type = "text" class = "form-control" id = "cook_time" name = "cook_time">
+        </div>
+
+        <div class = "mb-3">
+            <label for = "prep_time" class = "form-label"> Prep Time </label>
+            <input type = "text" class = "form-control" id = "prep_time" name = "prep_time">
+        </div>
+    </form>
+{% endblock %}
